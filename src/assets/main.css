@@ -5,3 +5,7 @@
     --header-color: #fee5d1;
     --footer-color: #bc94d6;
 }
+
+body {
+    background-color: var(--tertiary_color);
+}

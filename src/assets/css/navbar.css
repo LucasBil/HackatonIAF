@@ -1,10 +1,13 @@
+navbar {
+    position: sticky;
+}
+
 #desktop-nav {
     background-color: var(--header-color);
-    padding: 10px 8%;
 
     #navbar {
+        padding: 10px 8%;
         display: flex;
-        padding: 0;
         margin: 0;
         align-items: center;
         justify-content: space-between;
@@ -14,6 +17,7 @@
             color: black;
             text-decoration: none;
             font-size: 20px;
+            font-family: "Quicksand", serif;
         }
 
         #logo {
@@ -37,6 +41,16 @@
             display: flex;
             gap: 50px;
         }
+    }
+
+    .pink-box {
+        background-color: #f42ca6;
+        height: 6px;
+    }
+    .dark-box {
+        background-color: var(--primary-color);
+        height: 6px;
+        margin-top: 3px;
     }
 }
 

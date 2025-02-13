@@ -25,6 +25,8 @@ import { RouterLink, RouterView } from 'vue-router'
             </li>
         </div>
       </ul>
+      <div class="pink-box"></div>
+      <div class="dark-box"></div>
     </nav>
     <nav class="navbar bg-body-tertiary" id="mobile-nav">
       <div class="container-fluid">
