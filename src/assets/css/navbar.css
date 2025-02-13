@@ -53,6 +53,38 @@ navbar {
     }
 }
 
+#mobile-nav {
+    background-color: var(--header-color) !important;
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: bold;
+
+        img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            border: solid 3px var(--primary-color);
+        }
+
+        .title-purple {
+            color: var(--secondary-color)
+        }
+    }
+
+    .pink-box {
+        background-color: #f42ca6;
+        height: 4px;
+    }
+    .dark-box {
+        background-color: var(--primary-color);
+        height: 4px;
+        margin-top: 2px;
+    }
+}
+
 @media (max-width: 800px) {
     #desktop-nav {
         display: none;
