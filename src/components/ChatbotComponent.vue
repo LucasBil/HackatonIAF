@@ -122,6 +122,7 @@ export default {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
   transition: transform 0.3s ease-in-out;
+  z-index: 999;
 }
 
 /* 📌 Fenêtre du chatbot */

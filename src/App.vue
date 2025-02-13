@@ -1,7 +1,6 @@
 <script setup>
 import '@/assets/css/navbar.css'
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 import ChatbotComponent from './components/ChatbotComponent.vue';
 import PolytechIcon from './assets/polytechIcon.vue';
 import IAFIcon from './assets/iafIcon.vue';
