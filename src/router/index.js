@@ -9,6 +9,11 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
     },
+    {
+      path: '/mail',
+      name: 'mail',
+      component: () => import('../views/MaillingView.vue'),
+    },
     // {
     //   path: '/about',
     //   name: 'about',
