@@ -1,6 +1,7 @@
 <script setup>
     import emailjs from 'emailjs-com';
-    import { ref, computed } from 'vue'
+    import { ref, computed } from 'vue';
+    import { VueRecaptchaPlugin } from 'vue-recaptcha';
 
     let lastname = ref("")
     let firstname = ref("")

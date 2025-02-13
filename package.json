@@ -21,6 +21,7 @@
     "hackaton": "file:",
     "pinia": "^2.3.1",
     "vue": "^3.5.13",
+    "vue-recaptcha": "^3.0.0-alpha.6",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
