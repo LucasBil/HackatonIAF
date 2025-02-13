@@ -6,6 +6,10 @@
     --footer-color: #bc94d6;
 }
 
+* {
+    font-family: "Quicksand", serif;
+}
+
 body {
     background-color: var(--tertiary_color);
 }

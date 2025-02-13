@@ -1,4 +1,5 @@
 <script setup>
+import '@/assets/css/partenaires.css'
 </script>
 
 <template>
@@ -26,18 +27,29 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-  </div>
-  <h1>Acitivité</h1>
-  <ul class="list-group">
-      <li class="list-group-item">Conférences</li>
-      <li class="list-group-item">Afterworks</li>
-      <li class="list-group-item">Soirées décontractées</li>
-      <li class="list-group-item">Interventions en milieu scolaire</li>
-      <li class="list-group-item">Sondages sur la mixité dans les écoles d’ingénieurs</li>
-      <li class="list-group-item">Journées portes ouvertes</li>
-      <li class="list-group-item">Portraits de femmes scientifiques</li>
-  </ul>
-  <h1>Objectif</h1>
-  <p></p>
+    </div>
+    <h1>Acitivité</h1>
+    <ul class="list-group">
+        <li class="list-group-item">Conférences</li>
+        <li class="list-group-item">Afterworks</li>
+        <li class="list-group-item">Soirées décontractées</li>
+        <li class="list-group-item">Interventions en milieu scolaire</li>
+        <li class="list-group-item">Sondages sur la mixité dans les écoles d’ingénieurs</li>
+        <li class="list-group-item">Journées portes ouvertes</li>
+        <li class="list-group-item">Portraits de femmes scientifiques</li>
+    </ul>
+    <h1>Objectif</h1>
+    <p></p>
+
+    <div id="partenaires">
+      <h2>Partenaires</h2>
+      <div class="vert-hr"></div>
+      <img src="@/assets/images/Logo_Credit_Agricol_Technologies_Services.jpg" alt="Crédit Agricole" class="partenaire-img">
+      <img src="@/assets/images/Logo_CVEC.png" alt="CVEC" class="partenaire-img">
+      <img src="@/assets/images/Logo_LISTIC.jpg" alt="LISTIC" class="partenaire-img">
+      <img src="@/assets/images/Logo_NTN.png" alt="NTN" class="partenaire-img">
+      <img src="@/assets/images/Logo_Sopra_Steria.png" alt="Sopra Steria" class="partenaire-img">
+      <img src="@/assets/images/Logo_Ville_Annecy.png" alt="Ville d'Annecy" class="partenaire-img">
+    </div>
   </main>
 </template>
