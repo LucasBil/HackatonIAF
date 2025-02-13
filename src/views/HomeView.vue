@@ -5,8 +5,8 @@ import '@/assets/css/partenaires.css'
 <template>
   <main class="d-flex flex-column">
     <div class="d-flex flex-column p-3">
-      <h1>Ingénieur au féminin polytech Annecy-Chambéry</h1>
-      <p>L'association <b>Ingénieure au féminin</b> de Polytech Annecy-Chambéry s'engage à promouvoir les métiers d'ingénieur auprès des jeunes filles, de l'école primaire au lycée. Elle organise divers événements, tels que des conférences, des afterworks, des soirées décontractées et des interventions en milieu scolaire, afin de sensibiliser les élèves aux opportunités offertes par les carrières scientifiques et technologiques. L'association mène également des sondages sur la mixité dans les écoles d'ingénieurs et partage des portraits de femmes scientifiques pour inspirer les futures générations. En 2024, elle a été récompensée par le prix de l'engagement étudiant du concours "Ingénieuses" de la CDEFI, reconnaissant ainsi ses efforts pour promouvoir l'égalité des genres dans l'ingénierie.</p>
+      <h1>Ingénieur-e au féminin polytech Annecy-Chambéry</h1>
+      <p>L'association <b>Ingénieur-e au féminin</b> de Polytech Annecy-Chambéry s'engage à promouvoir les métiers d'ingénieur auprès des jeunes filles, de l'école primaire au lycée. Elle organise divers événements, tels que des conférences, des afterworks, des soirées décontractées et des interventions en milieu scolaire, afin de sensibiliser les élèves aux opportunités offertes par les carrières scientifiques et technologiques. L'association mène également des sondages sur la mixité dans les écoles d'ingénieurs et partage des portraits de femmes scientifiques pour inspirer les futures générations. En 2024, elle a été récompensée par le prix de l'engagement étudiant du concours "Ingénieuses" de la CDEFI, reconnaissant ainsi ses efforts pour promouvoir l'égalité des genres dans l'ingénierie.</p>
       
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
