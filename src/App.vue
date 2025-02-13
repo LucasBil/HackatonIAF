@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import ChatbotComponent from './components/ChatbotComponent.vue';
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
+  <ChatbotComponent />
   <RouterView />
 </template>
 
