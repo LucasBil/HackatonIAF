@@ -42,7 +42,7 @@ import '@/assets/css/partenaires.css'
 
       
             <!-- Activités -->
-<section class="activities">
+<section class="activities" style="background-color: var(--tertiary_color);">
   <h2 class="section-title">Nos Activités</h2>
   <div class="activities-grid">
     <div class="activity-card">
@@ -85,7 +85,7 @@ import '@/assets/css/partenaires.css'
 
 
 <!-- Objectif -->
-<section class="objectif">
+<section class="objectif" style="background-color: var(--tertiary_color);">
   <h2 class="section-title">🎯 Notre Objectif</h2>
   <div class="objectif-card">
     <span class="objectif-icon">🚀</span>
