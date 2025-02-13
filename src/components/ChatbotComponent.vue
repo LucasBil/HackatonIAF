@@ -7,22 +7,37 @@
 
     <!-- Fenêtre du chatbot -->
     <div v-if="isChatOpen" class="chat-container">
-      <!-- Bouton de fermeture -->
-      <button class="close-btn" @click="toggleChat">✖</button>
+      <!-- En-tête du chatbot -->
+      <div class="chat-header">
+        <!-- <button class="back-btn" @click="toggleChat">←</button>  -->
+        <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" class="chat-avatar" alt="Chatbot Avatar">
+        <div>
+          <h3 class="chat-title">Ingénieur-e Au Féminin</h3>
+          <p class="chat-status">🟢 En ligne</p>
+        </div>
+        <button class="close-btn" @click="toggleChat">✖</button>
+      </div>
 
+      <!-- Contenu du chat -->
       <div class="chat-box">
-        <div v-for="(msg, index) in messages" :key="index" :class="{'user-msg': msg.user, 'bot-msg': !msg.user}">
+        <div v-for="(msg, index) in messages" :key="index" class="message-container" :class="{'user-msg': msg.user, 'bot-msg': !msg.user}">
           <span v-if="msg.isLink">
             <a :href="msg.text" target="_blank" class="bot-link">{{ msg.text }}</a>
           </span>
           <span v-else v-html="msg.text"></span>
+          <span class="message-time">{{ msg.time }}</span>
         </div>
       </div>
 
-      <input v-model="userInput" @keyup.enter="sendMessage" placeholder="Posez-moi une question..." />
+      <!-- Champ de saisie -->
+      <div class="chat-input-container">
+        <input v-model="userInput" @keyup.enter="sendMessage" placeholder="Écrivez votre message..." />
+        <button class="send-btn" @click="sendMessage">📩</button>
+      </div>
     </div>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -67,6 +82,11 @@ export default {
     toggleChat() {
       this.isChatOpen = !this.isChatOpen;
     },
+    
+    getCurrentTime() {
+            const now = new Date();
+            return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+          },
 
     normalizeText(text) {
       return text
@@ -110,106 +130,145 @@ export default {
 </script>
 
 <style scoped>
-/* 📌 Conteneur principal */
-.chat-container {
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  width: 350px;
-  background: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ccc;
-  transition: transform 0.3s ease-in-out;
-  z-index: 999;
-}
-
-/* 📌 Fenêtre du chatbot */
-.chat-box {
-  height: 300px;
-  overflow-y: auto;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  display: flex;
-  flex-direction: column;
-}
-
-/* 📌 Messages utilisateur */
-.user-msg {
-  align-self: flex-end;
-  background: #dcf8c6;
-  padding: 8px 12px;
-  margin: 5px;
-  border-radius: 10px;
-  max-width: 80%;
-  color: #000;
-}
-
-/* 📌 Messages du bot */
-.bot-msg {
-  align-self: flex-start;
-  background: #f1f1f1;
-  padding: 8px 12px;
-  margin: 5px;
-  border-radius: 10px;
-  max-width: 80%;
-  color: #000;
-}
-
-/* 📌 Liens en bleu */
-.bot-link {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.bot-link:hover {
-  text-decoration: underline;
-}
-
-/* 📌 Champ input */
-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  outline: none;
-  margin-top: 10px;
-}
-
-/* 📌 Bouton de fermeture */
-.close-btn {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background: none;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  color: #333;
-}
-
-/* 📌 Bouton flottant pour ouvrir le chatbot */
-.chatbot-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.chatbot-btn:hover {
-  background: #0056b3;
-}
-</style>
+      /* 📌 Fenêtre du chatbot */
+      .chat-container {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        width: 350px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        border: 1px solid #ccc;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        z-index: 999;     }
+      
+      /* 📌 En-tête du chatbot */
+      .chat-header {
+        background: #6a0dad;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+      }
+      
+      .chat-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0 10px;
+      }
+      
+      .chat-title {
+        font-size: 16px;
+        margin: 0;
+      }
+      
+      .chat-status {
+        font-size: 12px;
+        margin: 0;
+        color: #d1ffd1;
+      }
+      
+      /* 📌 Bouton de fermeture */
+      .close-btn {
+        background: none;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        color: #fff;
+        margin-left: auto;
+      }
+      
+      /* 📌 Fenêtre de chat */
+      .chat-box {
+        height: 300px;
+        overflow-y: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      /* 📌 Messages */
+      .message-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 75%;
+        padding: 10px;
+        border-radius: 12px;
+        margin: 5px;
+        font-size: 14px;
+      }
+      
+      .user-msg {
+        align-self: flex-end;
+        background: #dcf8c6;
+        color: #000;
+      }
+      
+      .bot-msg {
+        align-self: flex-start;
+        background: #f1f1f1;
+        color: #000;
+      }
+      
+      .message-time {
+        font-size: 10px;
+        align-self: flex-end;
+        margin-top: 3px;
+        color: #666;
+      }
+      
+      /* 📌 Champ de saisie */
+      .chat-input-container {
+        display: flex;
+        padding: 8px;
+        border-top: 1px solid #ddd;
+      }
+      
+      .chat-input-container input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        outline: none;
+      }
+      
+      .send-btn {
+        background: #6a0dad;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+      
+      /* 📌 Bouton flottant pour ouvrir le chatbot */
+      .chatbot-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #6a0dad;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      }
+      
+      .chatbot-btn:hover {
+        background: #5c009e;
+      }
+      </style>
+      
