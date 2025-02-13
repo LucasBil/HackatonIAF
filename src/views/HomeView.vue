@@ -8,29 +8,38 @@ import '@/assets/css/partenaires.css'
       <h1>Ingénieur-e au féminin polytech Annecy-Chambéry</h1>
       <p>L'association <b>Ingénieur-e au féminin</b> de Polytech Annecy-Chambéry s'engage à promouvoir les métiers d'ingénieur auprès des jeunes filles, de l'école primaire au lycée. Elle organise divers événements, tels que des conférences, des afterworks, des soirées décontractées et des interventions en milieu scolaire, afin de sensibiliser les élèves aux opportunités offertes par les carrières scientifiques et technologiques. L'association mène également des sondages sur la mixité dans les écoles d'ingénieurs et partage des portraits de femmes scientifiques pour inspirer les futures générations. En 2024, elle a été récompensée par le prix de l'engagement étudiant du concours "Ingénieuses" de la CDEFI, reconnaissant ainsi ses efforts pour promouvoir l'égalité des genres dans l'ingénierie.</p>
       
-      <section>
-        <div id="carouselExampleControls" class="carousel slide w-50 h-75"data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="@\assets\images\image1.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="@\assets\images\image2.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="@\assets\images\image3.jpg" alt="Third slide">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      <section class="carousel-container">
+  <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <!-- INDICATEURS -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- SLIDES -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="@/assets/images/image1.jpg" alt="Premier slide">
       </div>
-      </section>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="@/assets/images/image2.jpg" alt="Deuxième slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="@/assets/images/image3.jpg" alt="Troisième slide">
+      </div>
+    </div>
+
+    <!-- BOUTONS PREV/NEXT -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
       
             <!-- Activités -->
 <section class="activities">
