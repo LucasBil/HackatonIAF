@@ -11,7 +11,7 @@ import IAFIcon from './assets/iafIcon.vue';
       <ul id="navbar">
         <li>
           <router-link to="/" id="logo">
-            <img src="@/assets/Logo_IAF.png" alt="">
+            <img src="@/assets/images/Logo_IAF.png" alt="">
             <span>Ingénieur.e au <span class="title-purple">féminin</span></span>
           </router-link>
         </li>
@@ -33,7 +33,7 @@ import IAFIcon from './assets/iafIcon.vue';
     <nav class="navbar bg-body-tertiary" id="mobile-nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
-          <img src="@/assets/Logo_IAF.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <img src="@/assets/images/Logo_IAF.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
           Ingénieur.e au féminin
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

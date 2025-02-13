@@ -1,0 +1,22 @@
+.content {
+    height: 100vh;
+}
+
+#partenaires {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    background-color: white;
+    padding: 40px 100px;
+
+    .vert-hr {
+        background-color: var(--primary-color);
+        width: 2px;
+        height: 60px;
+    }
+
+    .partenaire-img {
+        height: 80px;
+    }
+}
