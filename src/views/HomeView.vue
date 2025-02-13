@@ -4,8 +4,8 @@ import '@/assets/css/partenaires.css'
 
 <template>
   <main class="d-flex flex-column p-3">
-    <h1>Ingénieur au féminin polytech Annecy-Chambéry</h1>
-    <p>Ingénieur au féminin est une association étudiante à but non lucratif  de polytech annecy - chambéry qui vise à la promotion des métiers d’ingénieurs auprès de lycéennes , colégiennes et primaires . </p>
+    <h1>Ingénieur-e au féminin polytech Annecy-Chambéry</h1>
+    <p>Ingénieur-e au féminin est une association étudiante à but non lucratif  de polytech annecy - chambéry qui vise à la promotion des métiers d’ingénieurs auprès de lycéennes , colégiennes et primaires . </p>
     
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">

@@ -10,8 +10,8 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/mail',
-      name: 'mail',
+      path: '/contact',
+      name: 'contact',
       component: () => import('../views/MaillingView.vue'),
     },
     // {

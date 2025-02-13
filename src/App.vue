@@ -33,27 +33,30 @@ import IAFIcon from './assets/iafIcon.vue';
     </nav>
     <nav class="navbar bg-body-tertiary" id="mobile-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <img src="@/assets/images/Logo_IAF.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          Ingénieur.e au féminin
-        </a>
+        <router-link to="/" class="navbar-brand">
+          <img src="@/assets/images/Logo_IAF.png" alt="Logo" class="d-inline-block align-text-top">
+          <span>Ingénieur.e au <span class="title-purple">féminin</span></span>
+        </router-link>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">L'association</a>
+              <router-link class="nav-link" to="/">L'association</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/agenda">Agenda</a>
+              <router-link class="nav-link" to="/agenda">Agenda</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
+              <router-link class="nav-link" to="/contact">Contact</router-link>
             </li>
           </ul>
         </div>
       </div>
+      <div class="pink-box"></div>
+      <div class="dark-box"></div>
     </nav>
   </header>
 
