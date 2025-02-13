@@ -265,6 +265,7 @@ export default {
         align-items: center;
         justify-content: center;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
       }
       
       .chatbot-btn:hover {
