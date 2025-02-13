@@ -47,10 +47,10 @@ import IAFIcon from './assets/iafIcon.vue';
               <router-link class="nav-link" to="/">L'association</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/agenda">Agenda</router-link>
+              <router-link class="nav-link" to="/contact">Contact</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/contact">Contact</router-link>
+              <router-link class="nav-link" to="/faq">FAQ</router-link>
             </li>
           </ul>
         </div>
