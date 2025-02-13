@@ -21,7 +21,7 @@ import IAFIcon from './assets/iafIcon.vue';
               <router-link to="/">L'association</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/agenda">Agenda</router-link>
+              <router-link to="/newsletter">Newsletter</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/contact">Contact</router-link>

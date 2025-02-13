@@ -1,5 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import Newsletter from "@/views/Newsletter.vue";
+
+
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,6 +18,11 @@ const router = createRouter({
       name: 'contact',
       component: () => import('../views/MaillingView.vue'),
     },
+ 
+    { 
+      path: "/newsletter", 
+      component: Newsletter }
+
     // {
     //   path: '/about',
     //   name: 'about',
