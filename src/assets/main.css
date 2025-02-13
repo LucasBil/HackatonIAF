@@ -9,3 +9,7 @@
 body {
     background-color: var(--tertiary_color);
 }
+
+main {
+    min-height: 100vh;
+}

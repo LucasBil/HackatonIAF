@@ -61,7 +61,7 @@ import IAFIcon from './assets/iafIcon.vue';
       <RouterLink to="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
         <IAFIcon />
       </RouterLink>
-      <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span>
     </div>
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-3">
