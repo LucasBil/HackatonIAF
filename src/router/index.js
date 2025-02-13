@@ -14,6 +14,11 @@ const router = createRouter({
       name: 'mail',
       component: () => import('../views/MaillingView.vue'),
     },
+    {
+      path: '/faq',
+      name: 'faq',
+      component: () => import('../views/FAQView.vue'),
+    },
     // {
     //   path: '/about',
     //   name: 'about',
