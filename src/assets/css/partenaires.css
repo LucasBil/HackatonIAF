@@ -20,3 +20,159 @@
         height: 80px;
     }
 }
+
+.activities {
+    text-align: center;
+    padding: 50px 20px;
+    background-color:#fee5d1;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .activity-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .activity-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .activity-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+
+  .objectif {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fee5d1;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .objectif-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .objectif-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .objectif-icon {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  
+  .objectif-card p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+
+  /* 📌 Style du conteneur du carrousel */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 600px; /* ✅ Limite la taille max */
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff3eb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 📌 Style du carrousel */
+  .carousel {
+    width: 100%;
+    max-height: 400px; /* ✅ Ajuste la hauteur */
+    border-radius: 15px;
+  }
+  
+  /* 📌 Indicateurs (points en bas) */
+  .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #007bff;
+    margin: 5px;
+    border: none;
+    opacity: 0.7;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #0056b3;
+    opacity: 1;
+  }
+  
+  /* 📌 Boutons précédent / suivant */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  /* 📌 Effet fluide */
+  .carousel-fade .carousel-item {
+    transition: opacity 0.8s ease-in-out;
+  }
+  

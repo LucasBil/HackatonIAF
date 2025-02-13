@@ -18,7 +18,11 @@ const router = createRouter({
       name: 'contact',
       component: () => import('../views/MaillingView.vue'),
     },
- 
+    {
+      path: '/faq',
+      name: 'faq',
+      component: () => import('../views/FAQView.vue'),
+    },
     { 
       path: "/newsletter", 
       component: Newsletter }

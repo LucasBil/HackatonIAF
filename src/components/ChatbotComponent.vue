@@ -251,7 +251,7 @@ export default {
       /* 📌 Bouton flottant pour ouvrir le chatbot */
       .chatbot-btn {
         position: fixed;
-        bottom: 20px;
+        bottom: 100px;
         right: 20px;
         background: #6a0dad;
         color: #fff;
@@ -265,6 +265,7 @@ export default {
         align-items: center;
         justify-content: center;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
       }
       
       .chatbot-btn:hover {

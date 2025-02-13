@@ -8,50 +8,106 @@ import '@/assets/css/partenaires.css'
       <h1>Ingénieur-e au féminin polytech Annecy-Chambéry</h1>
       <p>L'association <b>Ingénieur-e au féminin</b> de Polytech Annecy-Chambéry s'engage à promouvoir les métiers d'ingénieur auprès des jeunes filles, de l'école primaire au lycée. Elle organise divers événements, tels que des conférences, des afterworks, des soirées décontractées et des interventions en milieu scolaire, afin de sensibiliser les élèves aux opportunités offertes par les carrières scientifiques et technologiques. L'association mène également des sondages sur la mixité dans les écoles d'ingénieurs et partage des portraits de femmes scientifiques pour inspirer les futures générations. En 2024, elle a été récompensée par le prix de l'engagement étudiant du concours "Ingénieuses" de la CDEFI, reconnaissant ainsi ses efforts pour promouvoir l'égalité des genres dans l'ingénierie.</p>
       
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="..." alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Third slide">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      <section class="carousel-container">
+  <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <!-- INDICATEURS -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- SLIDES -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="@/assets/images/image1.jpg" alt="Premier slide">
       </div>
-      <h1>Acitivité</h1>
-      <ul class="list-group">
-          <li class="list-group-item">Conférences</li>
-          <li class="list-group-item">Afterworks</li>
-          <li class="list-group-item">Soirées décontractées</li>
-          <li class="list-group-item">Interventions en milieu scolaire</li>
-          <li class="list-group-item">Sondages sur la mixité dans les écoles d’ingénieurs</li>
-          <li class="list-group-item">Journées portes ouvertes</li>
-          <li class="list-group-item">Portraits de femmes scientifiques</li>
-      </ul>
-      <h1>Objectif</h1>
-      <p>L'association <b>Ingénieur.e au féminin</b> de Polytech Annecy-Chambéry a pour mission de promouvoir l'égalité des genres dans les études scientifiques et les carrières d'ingénieur. Elle s'engage activement à lutter contre les stéréotypes de genre en sensibilisant les jeunes filles, de l'école primaire au lycée, aux opportunités offertes par les métiers de l'ingénierie. Parmi ses actions, l'association organise des conférences, des afterworks, des soirées décontractées, des interventions en milieu scolaire, des sondages sur la mixité dans les écoles d’ingénieurs, des journées portes ouvertes et des publications de portraits de femmes scientifiques. Elle vise ainsi à encourager les vocations scientifiques chez les jeunes filles et à favoriser une plus grande mixité dans les formations d'ingénieurs. </p>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="@/assets/images/image2.jpg" alt="Deuxième slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="@/assets/images/image3.jpg" alt="Troisième slide">
+      </div>
+    </div>
+
+    <!-- BOUTONS PREV/NEXT -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+      
+            <!-- Activités -->
+<section class="activities" style="background-color: var(--tertiary_color);">
+  <h2 class="section-title">Nos Activités</h2>
+  <div class="activities-grid">
+    <div class="activity-card">
+      <span class="icon">🎤</span>
+      <h3>Conférences</h3>
+      <p>Des rencontres inspirantes avec des experts du domaine de l'ingénierie.</p>
+    </div>
+    <div class="activity-card">
+      <span class="icon">☕</span>
+      <h3>Afterworks</h3>
+      <p>Des moments conviviaux pour échanger et réseauter avec des professionnels.</p>
+    </div>
+    <div class="activity-card">
+      <span class="icon">🎉</span>
+      <h3>Soirées décontractées</h3>
+      <p>Des événements festifs pour renforcer la cohésion et s’amuser.</p>
+    </div>
+    <div class="activity-card">
+      <span class="icon">🏫</span>
+      <h3>Interventions scolaires</h3>
+      <p>Des sessions de sensibilisation auprès des jeunes pour promouvoir les carrières scientifiques.</p>
+    </div>
+    <div class="activity-card">
+      <span class="icon">📊</span>
+      <h3>Sondages sur la mixité</h3>
+      <p>Analyse de la répartition des genres dans les écoles d’ingénieurs.</p>
+    </div>
+    <div class="activity-card">
+      <span class="icon">🚪</span>
+      <h3>Journées portes ouvertes</h3>
+      <p>Des événements pour découvrir les parcours et les opportunités en ingénierie.</p>
+    </div>
+    <div class="activity-card">
+      <span class="icon">👩‍🔬</span>
+      <h3>Portraits de femmes scientifiques</h3>
+      <p>Des témoignages inspirants de femmes travaillant dans le domaine scientifique.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Objectif -->
+<section class="objectif" style="background-color: var(--tertiary_color);">
+  <h2 class="section-title">🎯 Notre Objectif</h2>
+  <div class="objectif-card">
+    <span class="objectif-icon">🚀</span>
+    <p>
+      Nous souhaitons encourager les jeunes filles à envisager des carrières scientifiques et techniques,
+      en leur offrant des opportunités d'échange, d'information et d’accompagnement tout au long de leurs études.
+    </p>
+  </div>
+</section>
     </div>
     
-    <div id="partenaires">
-      <h2>Partenaires</h2>
-      <div class="vert-hr"></div>
-      <img src="@/assets/images/Logo_Credit_Agricol_Technologies_Services.jpg" alt="Crédit Agricole" class="partenaire-img">
-      <img src="@/assets/images/Logo_CVEC.png" alt="CVEC" class="partenaire-img">
-      <img src="@/assets/images/Logo_LISTIC.jpg" alt="LISTIC" class="partenaire-img">
-      <img src="@/assets/images/Logo_NTN.png" alt="NTN" class="partenaire-img">
-      <img src="@/assets/images/Logo_Sopra_Steria.png" alt="Sopra Steria" class="partenaire-img">
-      <img src="@/assets/images/Logo_Ville_Annecy.png" alt="Ville d'Annecy" class="partenaire-img">
-    </div>
+     <!-- Partenaires -->
+     <section id="partenaires">
+              <h2>Nos Partenaires</h2>
+              <div class="partenaires-container">
+                <img src="@/assets/images/Logo_Credit_Agricol_Technologies_Services.jpg" alt="Crédit Agricole" class="partenaire-img">
+                <img src="@/assets/images/Logo_CVEC.png" alt="CVEC" class="partenaire-img">
+                <img src="@/assets/images/Logo_LISTIC.jpg" alt="LISTIC" class="partenaire-img">
+                <img src="@/assets/images/Logo_NTN.png" alt="NTN" class="partenaire-img">
+                <img src="@/assets/images/Logo_Sopra_Steria.png" alt="Sopra Steria" class="partenaire-img">
+                <img src="@/assets/images/Logo_Ville_Annecy.png" alt="Ville d'Annecy" class="partenaire-img">
+              </div>
+            </section>
   </main>
 </template>

@@ -26,6 +26,9 @@ import IAFIcon from './assets/iafIcon.vue';
             <li class="nav-item">
               <router-link to="/contact">Contact</router-link>
             </li>
+            <li class="nav-item">
+              <router-link to="/faq">FAQ</router-link>
+            </li>
         </div>
       </ul>
       <div class="pink-box"></div>
@@ -47,10 +50,13 @@ import IAFIcon from './assets/iafIcon.vue';
               <router-link class="nav-link" to="/">L'association</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/agenda">Agenda</router-link>
+              <router-link to="/newsletter">Newsletter</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/contact">Contact</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/faq">FAQ</router-link>
             </li>
           </ul>
         </div>
