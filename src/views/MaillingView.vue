@@ -22,7 +22,7 @@
             'service_vro5cfi', // Remplace avec ton ID de service
             'template_1recsej', // Remplace avec l'ID de ton template
             {
-                from_name: `${lastname.value.toUpperCase()} ${firstname.name}`,
+                from_name: `${lastname.value.toUpperCase()} ${firstname.value}`,
                 subject: `${subject.value}`,
                 message: `${message.value}`,
             },
